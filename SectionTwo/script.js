@@ -130,12 +130,81 @@ console.log(emptyValue);
 // operators
 // --------------------------------------------------------------------
 
+// 1.
 // typeof
 console.log(typeof true);
 console.log(typeof fullAge);
 console.log(typeof 23);
 console.log(typeof 'Jonas');
 console.log(typeof fName);
+
+
+// 2.
+// arithmatic - subtraction
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+
+// 3.
+// arithmatic - multiplication
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+
+
+// 4.
+// arithmatic - addition
+const firstPerName = 'Jonas';
+const lastPerName = 'Schmedtmann';
+
+// string concatenation
+console.log(firstPerName + ' ' + lastPerName);
+
+
+// 5.
+// assignment
+let x = 10 + 5;
+console.log(x);
+
+// x = x + 10
+x += 10;
+console.log(x);
+
+// x = x * 4
+x *= 4;
+console.log(x);
+
+// x = x + 1;
+x++;
+console.log(x);
+
+// x = x - 1;
+x--;
+console.log(x);
+
+
+// 6.
+// comparison
+// it is used to produce boolean values
+
+// greater than
+console.log(ageJonas > ageSarah);
+
+// less than
+console.log(ageJonas < ageSarah);
+
+// greater than or equal to
+console.log(ageSarah >= 18);
+
+// less than or equal to
+console.log(ageJonas <= 18);
+
+// example 1 
+const isFullAge = ageSarah >= 18;
+
+// example 2
+console.log(now - 1991 > now - 2018);
+console.log((now - 1991) > (now - 2018));
 
 // --------------------------------------------------------------------
 

@@ -1,5 +1,6 @@
 console code
 ------------
+note: console.log() has access to all the variables in the file
 
 
 1.
