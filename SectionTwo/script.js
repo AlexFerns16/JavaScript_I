@@ -210,6 +210,45 @@ console.log((now - 1991) > (now - 2018));
 
 
 
+// operators precedence
+// google: 'mdn operator precedence' 
+// --------------------------------------------------------------------
+
+//
+const nowYear = 2037;
+const ageOfJonas = now - 1991;
+const ageOfSarah = now - 2018;
+console.log(ageOfJonas, ageOfSarah);
+
+// 'precedence' is priority of operators
+// operators with same precedence will execute on the basis of 'associativity'
+// the '-' operator has a higher precedence over '>' operator
+// since the '-' operator is used at two places in the same equation, it will follow the associativity of operator
+// since the '-' operator has a 'left-to-right' precedence
+// the result of 'nowYear - 1991' is executed first and then
+// the result of 'nowYear - 2018' is executed next
+// following the precedence the '>' operator is executed next
+// with the result of 'nowYear - 1991' being the 'left operand' and the result of 'nowYear - 2018' being the 'right operand'
+console.log(nowYear - 1991 > nowYear - 2018);
+
+// arithmatic operators
+// 'left-to-right' precedence
+console.log(25 - 10 - 5);
+
+// assignment operators
+// 'right-to-left'
+let a, b;
+a = b = 25-10-5;
+console.log(a, b);
+
+// '()' has a higher precedence
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+
+// --------------------------------------------------------------------
+
+
+
 // re-assigning a variable
 // --------------------------------------------------------------------
 
