@@ -1,22 +1,29 @@
 let js = 'amazing';
 
 
+
 // explicitly mentioning 'console.log' to access the developers console
 // output is displayed in developers console
 // --------------------------------------------------------------------
+
 console.log(40 + 8 + 23 - 10)
 console.log('Jonas');
 console.log(23);
+
 // --------------------------------------------------------------------
+
 
 
 // variable assignment
 // --------------------------------------------------------------------
+
 let firstName = "Matilda";
 console.log(firstName);
 console.log(firstName);
 console.log(firstName);
+
 // --------------------------------------------------------------------
+
 
 
 // variable name conventions
@@ -71,6 +78,7 @@ let E = 2.71
 // --------------------------------------------------------------------
 
 
+
 // 7 Prmitive Data Types in JavaScript
 // JavaScript has Dynamic Typing
 // --------------------------------------------------------------------
@@ -80,10 +88,12 @@ let E = 2.71
 let age = 23;
 console.log(age);
 
+
 // 2. String 
 // Used for Text
 let fName = "Jonas";
 console.log(fName);
+
 
 // 3. Boolean
 // used for taking decisions
@@ -91,25 +101,30 @@ let fullAge = true;
 console.log(fullAge);
 console.log(false)
 
+
 // 4. Undefined
 // value taken by a variable that is not yet defined('empty value')
 let children;
 console.log(children);
+
 
 // 5. null
 // also means empty value
 let emptyValue = null;
 console.log(emptyValue);
 
+
 // 6. Symbol (ES2015)
 // value that is unique and cannot be changed
 // will do it later
+
 
 // 7. BigInt (ES2020)
 // larger integers that the 'Number' type can hold
 // will do it later
 
 // --------------------------------------------------------------------
+
 
 
 // operators
@@ -125,6 +140,7 @@ console.log(typeof fName);
 // --------------------------------------------------------------------
 
 
+
 // re-assigning a variable
 // --------------------------------------------------------------------
 
@@ -135,6 +151,7 @@ console.log(javascriptIsFun);
 javascriptIsFun = 'YES';
 console.log(javascriptIsFun);
 
+
 // 2. 
 let year;
 console.log(year);  // value is 'undefined'
@@ -144,7 +161,57 @@ year = 1991;
 console.log(year);  
 console.log(typeof year);
 
+
 // 3. 
 console.log(typeof null);   // should be 'undefined' but shows 'object' (it's a bug)
+
+// --------------------------------------------------------------------
+
+
+
+// 3 different ways of declaring variables in JavaScript
+// let, var, const
+// we will learn more about this in section 7
+// --------------------------------------------------------------------
+
+// 1.
+// re-assigning a value to a variable
+// mutating the variable
+let agePer = 30;
+agePer = 31;
+console.log(agePer);
+
+
+// 2.
+// creates a variable that we cannot re-assign
+// a variable that cannot be mutated
+const birthYear = 1991;
+console.log(birthYear);
+
+// Console: Uncaught TypeError: Assignment to constant variable.
+// birthYear = 1990;
+
+// Console: Uncaught SyntaxError: Missing initializer in const declaration
+// missing initializer in 'const' declaration
+// when declaring 'const' the value needs to be initialized, unlike 'let'
+// const job;
+
+
+// 3.
+// old way of defining the variables 
+var job = 'programmer';
+
+// mutating 'job' variable
+job = 'teacher';
+console.log(job);
+
+
+// 4. 
+// undeclared variable
+// this does not create a variable in the sculp
+// it creates a property on the global object
+// never write a variable like this, always properly declare a variable
+lastName = 'Schmedtmann';
+console.log(lastName);
 
 // --------------------------------------------------------------------
