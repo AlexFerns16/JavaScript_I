@@ -323,3 +323,88 @@ lastName = 'Schmedtmann';
 console.log(lastName);
 
 // --------------------------------------------------------------------
+
+
+
+// strings
+// --------------------------------------------------------------------
+
+const firstPersonName ='Jonas';
+const jobFirPer = 'teacher';
+const birthYearFirPer = 1991;
+const currentYear = 2037;
+
+// '(currentYear - birthYearFirPer)' > outputs an integer
+// but when concatenated with a string, gets typecasted by itself to a string output
+const jonasOne = "I'm " + firstPersonName + ', a ' +  (currentYear - birthYearFirPer) + ' years old ' + jobFirPer + '!';
+console.log(jonasOne);
+
+// ``(back-ticks) > used for template string
+const jonasTwo = `I'm ${firstPersonName}, a ${currentYear - birthYearFirPer} years old ${jobFirPer}!`;
+console.log(jonasTwo);
+
+// can be used for regular string as well
+console.log(`Just a regular string...`);
+
+// string with multiple lines
+console.log('String with \n\
+multiple \n\
+lines');
+
+// string with multiple lines with 'back-ticks'
+console.log(`String with
+multiple
+lines`);
+
+// --------------------------------------------------------------------
+
+
+
+// descision making
+// --------------------------------------------------------------------
+
+// 1.
+const agePersonOne = 19;
+const isOldEnoughOne = agePersonOne >= 18;
+
+if (isOldEnoughOne) {
+    console.log('Sarah can apply for driving license 😊')
+}
+
+if (agePersonOne >= 18) {
+    console.log('Sarah can apply for driving license 😊')
+}
+
+
+// 2.
+const agePersonTwo = 15;
+const isOldEnoughTwo = agePersonTwo >= 18;
+
+if (isOldEnoughTwo) {
+    console.log('Sarah can apply for driving license 😊')
+} else {
+    const yearsLeft = 18 - agePersonTwo;
+    console.log(`Sarah needs to wait for another ${yearsLeft} years to apply for driving license 😊`)
+}
+
+if (agePersonTwo >= 18) {
+    console.log('Sarah can apply for driving license 😊')
+} else {
+    const yearsLeft = 18 - agePersonTwo;
+    console.log(`Sarah needs to wait for another ${yearsLeft} years to apply for driving license 😊`)
+}
+
+
+// 3. 
+// variables declared with 'let' will not be accessible outside the block
+const birthYearSecPer = 1998;
+
+if (birthYearSecPer <= 2000) {
+    let century = 20;
+    console.log(century);
+} else {
+    let century = 21;
+    console.log(century);
+}
+
+// --------------------------------------------------------------------
