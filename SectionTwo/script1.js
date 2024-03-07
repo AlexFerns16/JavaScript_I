@@ -90,7 +90,7 @@ console.log(age);
 
 
 // 2. String 
-// Used for Text
+// used for text
 let fName = "Jonas";
 console.log(fName);
 
