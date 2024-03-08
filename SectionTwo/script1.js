@@ -407,4 +407,21 @@ if (birthYearSecPer <= 2000) {
     console.log(century);
 }
 
+
+// 4. 
+const birthYearThrPer = 2000;
+
+if (birthYearThrPer < 2000) {
+    let century = 20;
+    console.log(century);
+} 
+else if (birthYearThrPer > 2000) {
+    let century = 21;
+    console.log(century);
+} 
+else {
+    let century = 20.5;
+    console.log(century);
+}
+
 // --------------------------------------------------------------------

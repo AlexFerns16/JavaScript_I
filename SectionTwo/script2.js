@@ -56,16 +56,16 @@ console.log('23' * '2');
 console.log('23' / '2');
 
 
-// ex 1.
+// ex. 1.
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
 
-// ex 2.
+// ex. 2.
 let m = 2 + 3 + 4 + '5';
 console.log(m);
 
-// ex 3.
+// ex. 3.
 let o = '10' - '4' - '3' - 2 + '5';
 console.log(o);
 
