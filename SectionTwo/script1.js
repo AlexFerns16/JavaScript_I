@@ -339,9 +339,11 @@ const currentYear = 2037;
 const jonasOne = "I'm " + firstPersonName + ', a ' +  (currentYear - birthYearFirPer) + ' years old ' + jobFirPer + '!';
 console.log(jonasOne);
 
-// ``(back-ticks) > used for template string
+// ``(back-ticks) > used for template string / template literal
 const jonasTwo = `I'm ${firstPersonName}, a ${currentYear - birthYearFirPer} years old ${jobFirPer}!`;
 console.log(jonasTwo);
+const jonasThr = `I'm ${'Jonas'}, a ${46} years old ${'teacher'}!`;
+console.log(jonasThr);
 
 // can be used for regular string as well
 console.log(`Just a regular string...`);
