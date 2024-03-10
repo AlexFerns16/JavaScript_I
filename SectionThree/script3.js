@@ -1,10 +1,11 @@
 
-// functions
+// function declarations and function expressions
 
 // --------------------------------------------------------------------
 
 // 1.
 // 'birthYear' > parameter
+// function declaration
 function calcAge1(birthYear) {
     const age = 2037 - birthYear;
     return age;
@@ -17,6 +18,7 @@ console.log(age1);
 
 // 2.
 // 'birthYear' > parameter
+// function declaration
 function calcAge2(birthYear) {
     return 2037 - birthYear;
 }
@@ -40,6 +42,7 @@ console.log(age3);
 
 
 // 4.
+// function expression
 // passing a 'function as a value' to a 'variable'
 const calcAge4 = function cA4 (birthYear) {
     return 2037 - birthYear;

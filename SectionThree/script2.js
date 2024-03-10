@@ -1,5 +1,5 @@
 
-// functions
+// defining and calling/running/invoking a function
 
 // --------------------------------------------------------------------
 
