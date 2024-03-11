@@ -66,4 +66,23 @@ if (friends.includes('Peter')) {
     console.log("You have a friend called 'Peter'");
 }
 
+
+// 7.
+// array1
+const array1 = [1, 2, 3, 4, 5];
+console.log(array1);
+console.log(typeof(array1));
+
+// array2
+const array2 = [10, 20, 30, 40, 50];
+console.log(array2);
+console.log(typeof(array2));
+
+// array 3
+// concatenation
+// the result is the string of all the elements from both the arrays
+const array3 = array1 + array2;
+console.log(array3);
+console.log(typeof(array3));
+
 // --------------------------------------------------------------------
