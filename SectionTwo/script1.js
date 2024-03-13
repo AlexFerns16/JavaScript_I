@@ -322,6 +322,72 @@ console.log(job);
 lastName = 'Schmedtmann';
 console.log(lastName);
 
+
+// 5. 
+
+// a. var
+// can be re-declared
+// can be re-defined
+var abc = 10;
+var abc;
+abc = 20;
+
+// b. let
+// cannot be re-declared
+// but, can be re-defined
+// ...
+// ---------- uncomment code ----------
+let xyz = 10;
+// let xyz;
+xyz = 20;
+// ---------- uncomment code ----------
+
+// c. const
+// cannot be re-declared
+// but, can be re-defined
+// ...
+// ---------- uncomment code ----------
+const uvw = 10;
+// const uvw;
+uvw = 20;
+// ---------- uncomment code ----------
+
+
+// 6. 
+
+// a. var 
+// doesn't have 'block scope'
+// but, has function scope
+var temp1 = 10;
+console.log(temp1);
+{
+    var temp1 = 20;
+    console.log(temp1);
+}
+console.log(temp1);
+
+// b. let 
+// has 'block scope'
+// has function scope
+let temp2 = 10;
+console.log(temp2);
+{
+    let temp2 = 20;
+    console.log(temp2);
+}
+console.log(temp2);
+
+// c. const
+// has 'block scope'
+// has function scope
+const temp3 = 10;
+console.log(temp3);
+{
+    const temp3 = 20;
+    console.log(temp3);
+}
+console.log(temp3);
+
 // --------------------------------------------------------------------
 
 
