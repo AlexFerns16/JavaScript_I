@@ -344,7 +344,8 @@ xyz = 20;
 
 // c. const
 // cannot be re-declared
-// but, can be re-defined
+// cannot be re-defined
+// syntax error
 // ...
 // ---------- uncomment code ----------
 const uvw = 10;
