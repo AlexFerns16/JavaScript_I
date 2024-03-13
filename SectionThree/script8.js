@@ -8,6 +8,8 @@ const friends = ['Michael', 'Steven', 'Peter'];
 
 // 2. 
 // add elements to the end of the array
+// 'friends' > 'array' (a special type of an 'object')
+// 'push' > 'method' of the 'object'
 friends.push('Jay');
 console.log(friends);
 
