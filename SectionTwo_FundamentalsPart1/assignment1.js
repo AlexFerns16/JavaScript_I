@@ -1,12 +1,10 @@
-let country = 'Portugal';
-let continent = 'Europe';
-let population = ' 10';
+let country = "Portugal";
+let continent = "Europe";
+let population = " 10";
 
 console.log(country);
 console.log(continent);
 console.log(population);
-
-
 
 // coding challenge 1 - part 1
 // --------------------------------------------------------------------
@@ -33,7 +31,6 @@ m tall.
 
 */
 
-
 // test data 1
 const massMark1 = 78;
 const heightMark1 = 1.69;
@@ -46,7 +43,6 @@ console.log(BMIMark1, BMIJohn1);
 
 const markHigherBMI1 = BMIMark1 > BMIJohn1;
 console.log(markHigherBMI1);
-
 
 // test data 2
 const massMark2 = 95;

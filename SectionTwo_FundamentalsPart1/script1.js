@@ -1,19 +1,17 @@
-let js = 'amazing';
+let js = "amazing";
 
-
-
+// OUTERSECTION
 // explicitly mentioning 'console.log' to access the developers console
 // output is displayed in developers console
 // --------------------------------------------------------------------
 
-console.log(40 + 8 + 23 - 10)
-console.log('Jonas');
+console.log(40 + 8 + 23 - 10);
+console.log("Jonas");
 console.log(23);
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // variable assignment
 // --------------------------------------------------------------------
 
@@ -24,8 +22,7 @@ console.log(firstName);
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // variable name conventions
 // --------------------------------------------------------------------
 
@@ -64,81 +61,81 @@ let Person = "Jonas";
 let _function = 27;
 let $new = 27;
 
-// 'name' is also a reserved keyword in JS, 
+// 'name' is also a reserved keyword in JS,
 // but still allowed to be used
 // it is a good practice to not use it as a variable name
-let name = 'Jonas';
+let name = "Jonas";
 
 // for constants that will never change
 // there is a convention of writing it all in uppercase
 // the color will be differently used for constants
-let PI = 3.1415
-let E = 2.71
+let PI = 3.1415;
+let E = 2.71;
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // 7 Prmitive Data Types in JavaScript
 // JavaScript has Dynamic Typing
 // --------------------------------------------------------------------
 
-// 1. Number 
-// used for floating point number 
+// INNERSECTION
+// 1. Number
+// used for floating point number
 let age = 23;
 console.log(age);
 
-
-// 2. String 
+// INNERSECTION
+// 2. String
 // used for text
 let fName = "Jonas";
 console.log(fName);
 
-
+// INNERSECTION
 // 3. Boolean
 // used for taking decisions
 let fullAge = true;
 console.log(fullAge);
-console.log(false)
+console.log(false);
 
-
+// INNERSECTION
 // 4. Undefined
 // value taken by a variable that is not yet defined('empty value')
 let children;
 console.log(children);
 
-
+// INNERSECTION
 // 5. null
 // also means empty value
 let emptyValue = null;
 console.log(emptyValue);
 
-
+// INNERSECTION
 // 6. Symbol (ES2015)
 // value that is unique and cannot be changed
 // will do it later
 
-
+// INNERSECTION
 // 7. BigInt (ES2020)
 // larger integers that the 'Number' type can hold
 // will do it later
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // operators
 // --------------------------------------------------------------------
 
+// INNERSECTION
 // 1.
 // typeof
 console.log(typeof true);
 console.log(typeof fullAge);
 console.log(typeof 23);
-console.log(typeof 'Jonas');
+console.log(typeof "Jonas");
 console.log(typeof fName);
 
-
+// INNERSECTION
 // 2.
 // arithmatic - subtraction
 const now = 2037;
@@ -146,21 +143,21 @@ const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 console.log(ageJonas, ageSarah);
 
-
+// INNERSECTION
 // 3.
 // arithmatic - multiplication
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 
-
+// INNERSECTION
 // 4.
 // arithmatic - addition
-const firstPerName = 'Jonas';
-const lastPerName = 'Schmedtmann';
+const firstPerName = "Jonas";
+const lastPerName = "Schmedtmann";
 
 // string concatenation
-console.log(firstPerName + ' ' + lastPerName);
+console.log(firstPerName + " " + lastPerName);
 
-
+// INNERSECTION
 // 5.
 // assignment
 let x = 10 + 5;
@@ -182,7 +179,7 @@ console.log(x);
 x--;
 console.log(x);
 
-
+// INNERSECTION
 // 6.
 // comparison
 // it is used to produce boolean values
@@ -199,19 +196,18 @@ console.log(ageSarah >= 18);
 // less than or equal to
 console.log(ageJonas <= 18);
 
-// example 1 
+// example 1
 const isFullAge = ageSarah >= 18;
 
 // example 2
 console.log(now - 1991 > now - 2018);
-console.log((now - 1991) > (now - 2018));
+console.log(now - 1991 > now - 2018);
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // operators precedence
-// google: 'mdn operator precedence' 
+// google: 'mdn operator precedence'
 // --------------------------------------------------------------------
 
 //
@@ -238,7 +234,7 @@ console.log(25 - 10 - 5);
 // assignment operators
 // 'right-to-left'
 let a, b;
-a = b = 25-10-5;
+a = b = 25 - 10 - 5;
 console.log(a, b);
 
 // '()' has a higher precedence
@@ -247,41 +243,41 @@ console.log(ageJonas, ageSarah, averageAge);
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // re-assigning a variable
 // --------------------------------------------------------------------
 
-// 1. 
+// INNERSECTION
+// 1.
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
-javascriptIsFun = 'YES';
+javascriptIsFun = "YES";
 console.log(javascriptIsFun);
 
-
-// 2. 
+// INNERSECTION
+// 2.
 let year;
-console.log(year);  // value is 'undefined'
-console.log(typeof year);   // data type is 'undefined'
+console.log(year); // value is 'undefined'
+console.log(typeof year); // data type is 'undefined'
 
 year = 1991;
-console.log(year);  
+console.log(year);
 console.log(typeof year);
 
-
-// 3. 
-console.log(typeof null);   // should be 'undefined' but shows 'object' (it's a bug)
+// INNERSECTION
+// 3.
+console.log(typeof null); // should be 'undefined' but shows 'object' (it's a bug)
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // 3 different ways of declaring variables in JavaScript
 // let, var, const
 // we will learn more about this in section 7
 // --------------------------------------------------------------------
 
+// INNERSECTION
 // 1.
 // re-assigning a value to a variable
 // mutating the variable
@@ -289,7 +285,7 @@ let agePer = 30;
 agePer = 31;
 console.log(agePer);
 
-
+// INNERSECTION
 // 2.
 // creates a variable that we cannot re-assign
 // a variable that cannot be mutated
@@ -304,27 +300,28 @@ console.log(birthYear);
 // when declaring 'const' the value needs to be initialized, unlike 'let'
 // const job;
 
-
+// INNERSECTION
 // 3.
-// old way of defining the variables 
-var job = 'programmer';
+// old way of defining the variables
+var job = "programmer";
 
 // mutating 'job' variable
-job = 'teacher';
+job = "teacher";
 console.log(job);
 
-
-// 4. 
+// INNERSECTION
+// 4.
 // undeclared variable
 // this does not create a variable in the sculp
 // it creates a property on the global object
 // never write a variable like this, always properly declare a variable
-lastName = 'Schmedtmann';
+lastName = "Schmedtmann";
 console.log(lastName);
 
+// INNERSECTION
+// 5.
 
-// 5. 
-
+// SUBSECTION
 // a. var
 // can be re-declared
 // can be re-defined
@@ -332,6 +329,7 @@ var abc = 10;
 var abc;
 abc = 20;
 
+// SUBSECTION
 // b. let
 // cannot be re-declared
 // but, can be re-defined
@@ -342,6 +340,7 @@ let xyz = 10;
 xyz = 20;
 // ---------- uncomment code ----------
 
+// SUBSECTION
 // c. const
 // cannot be re-declared
 // cannot be re-defined
@@ -353,72 +352,85 @@ const uvw = 10;
 uvw = 20;
 // ---------- uncomment code ----------
 
+// INNERSECTION
+// 6.
 
-// 6. 
-
-// a. var 
+// SUBSECTION
+// a. var
 // doesn't have 'block scope'
 // but, has function scope
 var temp1 = 10;
 console.log(temp1);
 {
-    var temp1 = 20;
-    console.log(temp1);
+  var temp1 = 20;
+  console.log(temp1);
 }
 console.log(temp1);
 
-// b. let 
+// SUBSECTION
+// b. let
 // has 'block scope'
 // has function scope
 let temp2 = 10;
 console.log(temp2);
 {
-    let temp2 = 20;
-    console.log(temp2);
+  let temp2 = 20;
+  console.log(temp2);
 }
 console.log(temp2);
 
+// SUBSECTION
 // c. const
 // has 'block scope'
 // has function scope
 const temp3 = 10;
 console.log(temp3);
 {
-    const temp3 = 20;
-    console.log(temp3);
+  const temp3 = 20;
+  console.log(temp3);
 }
 console.log(temp3);
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // strings
 // --------------------------------------------------------------------
 
-const firstPersonName ='Jonas';
-const jobFirPer = 'teacher';
+const firstPersonName = "Jonas";
+const jobFirPer = "teacher";
 const birthYearFirPer = 1991;
 const currentYear = 2037;
 
 // '(currentYear - birthYearFirPer)' > outputs an integer
 // but when concatenated with a string, gets typecasted by itself to a string output
-const jonasOne = "I'm " + firstPersonName + ', a ' +  (currentYear - birthYearFirPer) + ' years old ' + jobFirPer + '!';
+const jonasOne =
+  "I'm " +
+  firstPersonName +
+  ", a " +
+  (currentYear - birthYearFirPer) +
+  " years old " +
+  jobFirPer +
+  "!";
 console.log(jonasOne);
 
 // ``(back-ticks) > used for template string / template literal
-const jonasTwo = `I'm ${firstPersonName}, a ${currentYear - birthYearFirPer} years old ${jobFirPer}!`;
+const jonasTwo = `I'm ${firstPersonName}, a ${
+  currentYear - birthYearFirPer
+} years old ${jobFirPer}!`;
 console.log(jonasTwo);
-const jonasThr = `I'm ${'Jonas'}, a ${46} years old ${'teacher'}!`;
+const jonasThr = `I'm ${"Jonas"}, a ${46} years old ${"teacher"}!`;
 console.log(jonasThr);
 
 // can be used for regular string as well
 console.log(`Just a regular string...`);
 
 // string with multiple lines
-console.log('String with \n\
+console.log(
+  "String with \n\
 multiple \n\
-lines');
+lines"
+);
 
 // string with multiple lines with 'back-ticks'
 console.log(`String with
@@ -427,70 +439,72 @@ lines`);
 
 // --------------------------------------------------------------------
 
-
-
+// OUTERSECTION
 // descision making
 // --------------------------------------------------------------------
 
+// INNERSECTION
 // 1.
 const agePersonOne = 19;
 const isOldEnoughOne = agePersonOne >= 18;
 
 if (isOldEnoughOne) {
-    console.log('Sarah can apply for driving license 😊')
+  console.log("Sarah can apply for driving license 😊");
 }
 
 if (agePersonOne >= 18) {
-    console.log('Sarah can apply for driving license 😊')
+  console.log("Sarah can apply for driving license 😊");
 }
 
-
+// INNERSECTION
 // 2.
 const agePersonTwo = 15;
 const isOldEnoughTwo = agePersonTwo >= 18;
 
 if (isOldEnoughTwo) {
-    console.log('Sarah can apply for driving license 😊')
+  console.log("Sarah can apply for driving license 😊");
 } else {
-    const yearsLeft = 18 - agePersonTwo;
-    console.log(`Sarah needs to wait for another ${yearsLeft} years to apply for driving license 😊`)
+  const yearsLeft = 18 - agePersonTwo;
+  console.log(
+    `Sarah needs to wait for another ${yearsLeft} years to apply for driving license 😊`
+  );
 }
 
 if (agePersonTwo >= 18) {
-    console.log('Sarah can apply for driving license 😊')
+  console.log("Sarah can apply for driving license 😊");
 } else {
-    const yearsLeft = 18 - agePersonTwo;
-    console.log(`Sarah needs to wait for another ${yearsLeft} years to apply for driving license 😊`)
+  const yearsLeft = 18 - agePersonTwo;
+  console.log(
+    `Sarah needs to wait for another ${yearsLeft} years to apply for driving license 😊`
+  );
 }
 
-
-// 3. 
+// INNERSECTION
+// 3.
 // variables declared with 'let' will not be accessible outside the block
 const birthYearSecPer = 1998;
 
 if (birthYearSecPer <= 2000) {
-    let century = 20;
-    console.log(century);
+  let century = 20;
+  console.log(century);
 } else {
-    let century = 21;
-    console.log(century);
+  let century = 21;
+  console.log(century);
 }
 
-
-// 4. 
+// INNERSECTION
+// 4.
 const birthYearThrPer = 2000;
 
 if (birthYearThrPer < 2000) {
-    let century = 20;
-    console.log(century);
-} 
-else if (birthYearThrPer > 2000) {
-    let century = 21;
-    console.log(century);
-} 
-else {
-    let century = 20.5;
-    console.log(century);
+  let century = 20;
+  console.log(century);
+} else if (birthYearThrPer > 2000) {
+  let century = 21;
+  console.log(century);
+} else {
+  let century = 20.5;
+  console.log(century);
 }
 
 // --------------------------------------------------------------------
