@@ -1,4 +1,3 @@
-
 // coding challenge 2 - part 1
 // --------------------------------------------------------------------
 
@@ -19,7 +18,6 @@ Hint: Use an if/else statement
 
 */
 
-
 // test data 3
 const massMark3 = 95;
 const heightMark3 = 1.88;
@@ -31,11 +29,10 @@ const BMIJohn3 = massJohn3 / (heightJohn3 * heightJohn3);
 console.log(BMIMark3, BMIJohn3);
 
 if (BMIMark3 > BMIJohn3) {
-    console.log(`Mark's BMI ${BMIMark3} is higher than John's BMI ${BMIJohn3}`);
+  console.log(`Mark's BMI ${BMIMark3} is higher than John's BMI ${BMIJohn3}`);
 } else {
-    console.log(`John's BMI ${BMIJohn3} is higher than Mark's BMI ${BMIMark3}`);
+  console.log(`John's BMI ${BMIJohn3} is higher than Mark's BMI ${BMIMark3}`);
 }
-
 
 // test data 4
 const massMark4 = 78;
@@ -48,9 +45,9 @@ const BMIJohn4 = massJohn4 / (heightJohn4 * heightJohn4);
 console.log(BMIMark4, BMIJohn4);
 
 if (BMIMark4 > BMIJohn4) {
-    console.log(`Mark's BMI ${BMIMark4} is higher than John's BMI ${BMIJohn4}`);
+  console.log(`Mark's BMI ${BMIMark4} is higher than John's BMI ${BMIJohn4}`);
 } else {
-    console.log(`John's BMI ${BMIJohn4} is higher than Mark's BMI ${BMIMark4}`);
+  console.log(`John's BMI ${BMIJohn4} is higher than Mark's BMI ${BMIMark4}`);
 }
 
 // --------------------------------------------------------------------

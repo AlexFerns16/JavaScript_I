@@ -1,14 +1,14 @@
-    
+// PARTS
 // forbids us to do certain things
 // creates visible errors
-'use strict'; 
+"use strict";
 
-
+// PARTS
 // declaring and defining
 let hasDriversLicense1 = false;
 const passTest1 = true;
 
-
+// PARTS
 // without the use of 'strict' mode
 // 'hasDriverLicense1' will be set as a new variable and defined as 'true'
 // with the use of 'strict' mode the console will through an error stating
@@ -20,7 +20,7 @@ const passTest1 = true;
 // if (hasDriversLicense1) console.log("I can drive");
 // ---------- uncomment code ----------
 
-
+// PARTS
 // declaring and defining
 // Uncaught SyntaxError: Unexpected strict mode reserved word
 // ...
@@ -29,7 +29,7 @@ const passTest1 = true;
 // const private = 534;         // 'private' > Unexpected strict mode reserved word
 // ---------- uncomment code ----------
 
-
+// PARTS
 // declaring and defining
 // Uncaught SyntaxError: Unexpected token 'if'
 // ...
