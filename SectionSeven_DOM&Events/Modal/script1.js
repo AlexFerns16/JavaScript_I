@@ -31,5 +31,8 @@ document.addEventListener('keydown', function (e) {
 
   if (e.key === 'Escape') {
     console.log('Escape was pressed');
+    if (!modal.classList.contains('hidden')) {
+      closeModal();
+    }
   }
 });
