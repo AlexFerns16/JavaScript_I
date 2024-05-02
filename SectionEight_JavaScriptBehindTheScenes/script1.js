@@ -11,14 +11,19 @@ function calcAge(birthYear) {
     // 'firstName' is accessible from the global execution context
     // 'age' is accessible from the parent execution context 'calcAge'
     // 'birthYear' is accessible from the parent execution context 'calcAge'
-    const output = `${firstName},You are ${age}, born in ${birthYear}`;
+    let output = `${firstName},You are ${age}, born in ${birthYear}`;
     console.log(output);
 
     if (birthYear >= 1981 && birthYear <= 1996) {
+      // block scope variable
+      // creating a NEW variable with the same name as outer scope's variable
+      const firstName = 'Steve';
+
       // 'firstName' is accessible from the global execution context
       // 'str' has 'block scope'
       const str = `Oh, and you are a millenial, ${firstName}`;
       console.log(str);
+
       // 'var' is not 'block scope', but only function scoped
       var millenial = true;
       console.log(millenial);
@@ -27,13 +32,28 @@ function calcAge(birthYear) {
       function add(a, b) {
         return a + b;
       }
+
+      // we did not create (declare) a new variable here
+      // but have simply re-defined an existing variable
+      // whose updated value could be accessed out of the block scope
+      output = 'NEW OUTPUT';
+
+      // a new varible created (declared) within block scope
+      // will not be accessible out of the block scope
+      // const output = 'VERY NEW OUTPUT';
     }
+
     // 'str' has 'block scope'
     // console.log(str);
+
     // 'var' is not 'block scope', but only function scoped
     console.log(millenial);
+
     // function 'add' is 'block scoped'
     // add(2, 3);
+
+    // 'NEW OUTPUT'
+    console.log(output);
   }
   printAge();
 
