@@ -1,5 +1,7 @@
 'use strict';
 
+// scoping in practice
+
 // global scope execution context
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
