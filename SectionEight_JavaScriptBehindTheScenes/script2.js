@@ -26,18 +26,33 @@ console.log(addDecl(2, 3));
 // console.log(addExpr(2, 3));
 // console.log(addArrow(2, 3));
 
+// ----------------------------------------------------------------------
 // function declaration
 // can be called before defining
 function addDecl(a, b) {
   return a + b;
 }
 
+// ----------------------------------------------------------------------
 // function expression
 // cannot be called before defining as it is defined with 'const'
-const addExpr = function (a, b) {
+// const addExpr = function (a, b) {
+//   return a + b;
+// };
+
+// any variable defined with 'var' is hoisted to 'undefined'
+// function name is viewed as 'undefined(a, b)', which does not exists
+// therefore, it cannot be called before defining
+var addExpr = function (a, b) {
   return a + b;
 };
 
+// ----------------------------------------------------------------------
 // function arrow
 // cannot be called before defining as it is defined with 'const'
-const addArrow = (a, b) => a + b;
+// const addArrow = (a, b) => a + b;
+
+// any variable defined with 'var' is hoisted to 'undefined'
+// function name is viewed as 'undefined(a, b)', which does not exists
+// therefore, it cannot be called before defining
+var addArrow = (a, b) => a + b;
