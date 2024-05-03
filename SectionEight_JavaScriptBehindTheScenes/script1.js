@@ -1,6 +1,6 @@
 'use strict';
 
-// scoping in practice
+// Scoping in Practice
 
 // global scope execution context
 function calcAge(birthYear) {
