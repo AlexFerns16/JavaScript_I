@@ -2,6 +2,12 @@
 
 // regular functions vs arrow functions
 
+// if we declare variables with 'var'
+// it creates properties on the global object
+// 'firstName' is found on the window object
+// this is one of the reasons why we shouldn't use 'var'
+var firstName = 'Matilda';
+
 const jonas = {
   firstName: 'Jonas',
   year: 1991,
@@ -14,9 +20,16 @@ const jonas = {
   // and the parent scope of the 'greet' method is the global scope
   // const jonas = { ... }, is not a code block, so it is not the scope
   // it is an object literal
-  greet: () => console.log(`Hey, ${this.firstName}`),
+  // this is why we shouldn't use the arrow function as a method
+  greet: () => {
+    // 'this' > 'window'
+    console.log(this);
+    console.log(`Hey, ${this.firstName}`);
+  },
 };
 // results in 'Hey, undefined'
 jonas.greet();
-// results in 'undefined'
+// the 'this' keyword it refers to is in the global scope
+// 'this' > 'window'
 console.log(this.firstName);
+console.log(this);
