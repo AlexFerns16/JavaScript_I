@@ -21,14 +21,21 @@ const jonas = {
   // const jonas = { ... }, is not a code block, so it is not the scope
   // it is an object literal
   // this is why we shouldn't use the arrow function as a method
-  greet: () => {
-    // 'this' > 'window'
+  //   greet: () => {
+  //     // 'this' > 'window'
+  //     console.log(this);
+  //     console.log(`Hey, ${this.firstName}`);
+  //   },
+  greet: function () {
+    // 'this' > 'jonas' object
     console.log(this);
     console.log(`Hey, ${this.firstName}`);
   },
 };
+
 // results in 'Hey, undefined'
 jonas.greet();
+
 // the 'this' keyword it refers to is in the global scope
 // 'this' > 'window'
 console.log(this.firstName);
