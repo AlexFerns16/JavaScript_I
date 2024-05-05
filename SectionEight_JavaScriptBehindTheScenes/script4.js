@@ -15,9 +15,14 @@ const jonas = {
     console.log(this);
     console.log(2037 - this.year);
 
+    // solution to the problem in making 'this' available to 'isMillenial()'
+    // 'this' is a 'keyword', while 'self' is a 'variable'
+    // this is a way to preserve the 'this' keyword
+    const self = this;
     const isMillenial = function () {
-      console.log(this);
-      console.log(this.year >= 1981 && this.year <= 1996);
+      // 'self' is accessed through the parent scope
+      console.log(self);
+      console.log(self.year >= 1981 && self.year <= 1996);
     };
 
     // we know that, a 'function' that is attached to an 'object' is called a 'method'
