@@ -70,7 +70,27 @@ console.log(first2, third2);
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
 
-//
-const nested = [2, 4, [5, 6]];
-const [i, , j] = nested;
-console.log(i, j);
+// nested destructuring
+const nested1 = [2, 4, [5, 6]];
+const [i1, , j1] = nested1;
+console.log(i1, j1);
+
+// nested destructuring
+const nested2 = [2, 4, [5, 6]];
+const [i2, , [j2, k2]] = nested2;
+console.log(i2, j2, k2);
+
+// nested destructuring
+const nested3 = [2, 4, [5, 6]];
+const [i3, , [, k3]] = nested3;
+console.log(i3, k3);
+
+// default values
+
+// 'n' is 'undefined'
+const [l, m, n] = [8, 9];
+console.log(l, m, n);
+
+// 'r' takes the default value as '1'
+const [p = 1, q = 1, r = 1] = [8, 9];
+console.log(p, q, r);
