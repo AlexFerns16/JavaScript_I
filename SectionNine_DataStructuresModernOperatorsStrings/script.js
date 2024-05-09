@@ -52,8 +52,12 @@ console.log(first1, second1);
 let [first2, , third2] = restaurant.categories;
 console.log(first2, third2);
 
-// swapping
+// swapping using temp
 const temp = first2;
 first2 = third2;
 third2 = temp;
+console.log(first2, third2);
+
+// swapping without using temp
+[first2, third2] = [third2, first2];
 console.log(first2, third2);
