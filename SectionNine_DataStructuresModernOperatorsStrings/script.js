@@ -12,6 +12,10 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+
   openingHours: {
     thu: {
       open: 12,
@@ -61,3 +65,12 @@ console.log(first2, third2);
 // swapping without using temp
 [first2, third2] = [third2, first2];
 console.log(first2, third2);
+
+// receiving values from a function
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
+
+//
+const nested = [2, 4, [5, 6]];
+const [i, , j] = nested;
+console.log(i, j);
