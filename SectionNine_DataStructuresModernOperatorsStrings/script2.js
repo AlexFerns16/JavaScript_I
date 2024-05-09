@@ -52,3 +52,26 @@ console.log(restaurant.menu);
 // default values
 const { menu = [], starterMenu: starters = [] } = restaurant;
 console.log(menu, starters);
+
+// mutating variables
+let a = 111;
+let b = 999;
+console.log(a, b);
+
+const obj = { a: 23, b: 7, c: 14 };
+({ a, b } = obj);
+console.log(a, b);
+
+// nested objects
+
+//
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close);
+
+//
+const {
+  fri: { open: o, close: c },
+} = openingHours;
+console.log(o, c);
