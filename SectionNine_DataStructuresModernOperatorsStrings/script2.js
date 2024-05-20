@@ -16,6 +16,10 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
+  orderDelivery: function (obj) {
+    console.log(obj);
+  },
+
   openingHours: {
     thu: {
       open: 12,
@@ -31,6 +35,13 @@ const restaurant = {
     },
   },
 };
+
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'Via del Sole, 21',
+  mainIndex: 2,
+  starterIndex: 2,
+});
 
 // destructuring objects
 
