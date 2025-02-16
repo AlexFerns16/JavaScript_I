@@ -103,4 +103,15 @@ const array3 = array1 + array2;
 console.log(array3);
 console.log(typeof array3);
 
+// PARTS
+// typecasting to an array
+
+let stringArray01 = "[0,1,2]";
+let array01 = JSON.parse(stringArray01);
+console.log(array01);
+
+let stringArray02 = "a,b,c";
+let array02 = stringArray02.split(",");
+console.log(array02);
+
 // --------------------------------------------------------------------
